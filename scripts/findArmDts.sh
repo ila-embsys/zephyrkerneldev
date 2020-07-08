@@ -3,7 +3,7 @@
 echo "Searching 🏃 (Embedded Zephyr Dev)"
 
 # find
-findRet=$(find $1/dts -name $2)
+findRet=$(find $1/zephyr/dts -name $2)
 fileList=(${findRet//:/ })
 
 if [ "$fileList" != "" ]; then
